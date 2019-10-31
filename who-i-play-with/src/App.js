@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { regions } from './config'
 import * as loadingImage from './loading.gif'
+import PlayerList from './PlayerList/PlayerList';
 
 class App extends Component {
   state = {
@@ -42,6 +43,7 @@ class App extends Component {
         <div className="centering-container fullscreen-bg">
           <div className="panel">
             {content}
+            <PlayerList />
           </div>
         </div>
       </div>
