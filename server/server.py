@@ -30,7 +30,7 @@ def get_data():
 	for match in summoner.match_history:
 	    for participant in match.participants:
 	        summoner_name = participant.summoner.name
-	        if (summoner_name == summoner):
+	        if (summoner_name.lower() == summoner):
 	            continue
 
 	        player_counts[summoner_name] = player_counts.get(summoner_name, 0) + 1
